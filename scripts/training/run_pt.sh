@@ -40,7 +40,7 @@ torchrun --nnodes 1 --nproc_per_node 1 run_clm_pt_with_peft.py \
     --save_steps 200 \
     --gradient_accumulation_steps ${gradient_accumulation_steps} \
     --preprocessing_num_workers 8 \
-    --block_size 1024 \
+    --block_size 512 \
     --output_dir ${output_dir} \
     --overwrite_output_dir \
     --ddp_timeout 30000 \
