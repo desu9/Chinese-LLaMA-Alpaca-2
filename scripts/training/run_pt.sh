@@ -27,7 +27,7 @@ torchrun --nnodes 1 --nproc_per_node 1 run_clm_pt_with_peft.py \
     --per_device_eval_batch_size ${per_device_eval_batch_size} \
     --do_train \
     --seed $RANDOM \
-    --fp16 \
+    --fp8 \
     --num_train_epochs 1 \
     --lr_scheduler_type cosine \
     --learning_rate ${lr} \
