@@ -1,5 +1,5 @@
 torch==2.0.1
-git+https://github.com/huggingface/peft.git@13e53fc
+git+https://github.com/huggingface/peft.git@13e53fc7ee5d89d59b16523051006dddf0fb7a49
 transformers==4.31.0
 sentencepiece==0.1.97
 bitsandbytes==0.41.0
