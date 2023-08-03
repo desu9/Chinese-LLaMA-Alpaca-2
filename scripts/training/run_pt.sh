@@ -5,8 +5,8 @@ lora_trainable="q_proj,v_proj,k_proj,o_proj,gate_proj,down_proj,up_proj"
 modules_to_save="embed_tokens,lm_head"
 lora_dropout=0.05
 
-pretrained_model=ziqingyang/chinese-llama-2-7b
-chinese_tokenizer_path=ziqingyang/chinese-llama-2-7b
+pretrained_model=meta-llama/Llama-2-7b
+chinese_tokenizer_path=meta-llama/Llama-2-7b
 dataset_dir=./
 data_cache=temp_data_cache_dir
 per_device_train_batch_size=1
@@ -27,7 +27,7 @@ torchrun --nnodes 1 --nproc_per_node 1 run_clm_pt_with_peft.py \
     --per_device_eval_batch_size ${per_device_eval_batch_size} \
     --do_train \
     --seed $RANDOM \
-    --fp8 \
+    --fp16 \
     --num_train_epochs 1 \
     --lr_scheduler_type cosine \
     --learning_rate ${lr} \
