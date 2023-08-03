@@ -7,7 +7,7 @@ lora_dropout=0.05
 
 pretrained_model=ziqingyang/chinese-llama-2-7b
 chinese_tokenizer_path=ziqingyang/chinese-llama-2-7b
-dataset_dir=path/to/pt/data/dir
+dataset_dir=./
 data_cache=temp_data_cache_dir
 per_device_train_batch_size=1
 per_device_eval_batch_size=1
